@@ -15,7 +15,7 @@
                 <div class="card my-4">
                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                         <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
-                            <h6 class="text-white text-capitalize text-center">القائمة</h6>
+                            <h6 class="text-white text-capitalize text-center">الدعوات</h6>
                         </div>
                     </div>
                     <div class="card-body px-0 pb-2">
@@ -23,12 +23,8 @@
                             <table class="table align-items-center mb-0">
                                 <thead>
                                     <tr>
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">اختيار</th>
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">اسم باركود</th>
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">الصورة</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">الحالة</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">تاريخ الإنشاء</th>
-                                    </tr>
+
                                 </thead>
                                 <tbody>
                                     @foreach ($barcodeImages as $image)
@@ -38,7 +34,7 @@
                                             </td>
                                             <td>{{ $image }}</td>
                                             <td class="card mb-4">
-                                                <img src="{{ asset('img/barcodes/' . $image) }}" class="card-img-top w-50" alt="Barcode Image">
+                                                <img src="{{ asset('img/barcodes/' . $image) }}" class="card-img-top" style="width: 25%; height: auto;" alt="Barcode Image">
                                             </td>
                                         </tr>
                                     @endforeach
